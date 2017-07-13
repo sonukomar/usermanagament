@@ -29,4 +29,16 @@
   padding: 19px;
   border: 2px #e6e2e2 solid;
   border-radius: 10px;
+  
+}
+.actions{
+  display: none;
+}
+.opration{
+  background: #a9c9dc;
+  border-radius:4px;
+  padding: 2px;
+}
+.opration button, .searchDiv button.second{
+  margin-left:8px;
 }
