@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import '../App.css';
 
 
-class Enrollment extends Component {
+class Register extends Component {
 
     validateLogin = (event) =>{
         event.preventDefault();
        
-        if(this.passwordInput.value=== 'sonu' && this.emailInput.value === 'sonukomar@gmail.com'){
+        if(this.passwordInput.value === this.confPasswordInput.value){
             this.props.loggedInStatus.isLoggedIn = true;
              this.props.loggedInStatus.errorMsg = null;
              this.props.loggedInStatus.email = this.emailInput.value;
-           window.open("/#home","_self"); 
+             window.open("/#home","_self"); 
         }
         else{
            this.setState(prevState => {
 
           this.props.loggedInStatus.isLoggedIn = false;
-          this.props.loggedInStatus.errorMsg = "Invalid credentials!! Please try again."
+          this.props.loggedInStatus.errorMsg = "Password and Confirm Password doesn't match, Please enter same password !!"
            
            });
         
@@ -40,9 +40,13 @@ class Enrollment extends Component {
                         <label htmlFor="exampleInputPassword1">Password *</label>
                         <input type="password"  className="form-control" id="exampleInputPassword1" ref={(input) => this.passwordInput = input} placeholder="Password" required />
                     </div>
+                    <div  className="form-group">
+                        <label htmlFor="exampleInputPassword1">Confirm Password *</label>
+                        <input type="password"  className="form-control" id="exampleInputPassword1" ref={(input) => this.confPasswordInput = input} placeholder="Password" required />
+                    </div>
                    
-                    <button type="submit" className="btn btn-success">Login</button>
-                    <p className='pull-right'>Don't have an account? <a href="/#register">Create one</a></p>
+                    <button type="submit" className="btn btn-success">Register</button>
+                    
             </form>
         </div>    
      </div>
@@ -50,4 +54,4 @@ class Enrollment extends Component {
   }
 }
 
-export default Enrollment;
+export default Register;

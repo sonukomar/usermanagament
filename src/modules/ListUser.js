@@ -6,11 +6,29 @@ class ListUser extends Component {
     return (
      <div className="actions">   
         <div className="row">
-            <div className="col-md-12 opration">
-                <button className='btn btn-secondary'>Add User</button>
-                <button className='btn btn-secondary'>Search & UpdateUser</button>
-            </div>    
+           <div className="col-md-12 userAction">
+               <div className="col-md-3">
+                    <img src="/images/Female-user-add-icon.png" alt="" className="img-responsive img-circle"/>
+                    <caption>Add user</caption>    
+               </div>
+               <div className="col-md-3">
+                    <img src="/images/search_people.png" alt="" className="img-responsive img-circle"/>
+                    <caption>Search User</caption>    
+
+               </div>
+               <div className="col-md-3">
+                    <img src="/images/updateUser.png" alt="" className="img-responsive img-circle"/>
+                    <caption>Update User</caption>    
+
+               </div>
+               <div className="col-md-3">
+                    <img src="/images/deleteUser.png" alt="" className="img-responsive img-circle"/>
+                    <caption>Remove User</caption>  
+
+               </div>
+           </div> 
         </div>
+        <hr />
         <div className="row">
             <div className="col-md-3 searchDiv">
             <form>
