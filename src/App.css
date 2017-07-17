@@ -91,6 +91,7 @@ body{
 
 .navbar-default .navbar-brand {
     color: #2aa556;
+    text-shadow: 0px 4px 5px rgba(162, 146, 146, 0.95);
 }
 
 .panel-success {
@@ -149,7 +150,7 @@ body{
 
 @keyframes font {
   from {font-family:monospace;}
-  to   {font-family:lobster-two, cursive;;}
+  to   {font-family:lobster-two, cursive;}
 
 }
 
@@ -174,4 +175,22 @@ blockquote footer{
    animation-name: fade;
    animation-duration:15s;
 }
+
+.modal-title{
+ 
+    color: #2aa556;
+    font-family:lobster-two, cursive;
+    font-size: 48px;
+    word-spacing: 10px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0px 4px 5px rgba(162, 146, 146, 0.95);
+}
+
+.modal-header {
+    padding: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
 
